@@ -10,3 +10,10 @@ body{
 .db-color{
   background-color:  #343b47;
 }
+
+.alpha-bg{
+  background: #40404055;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+}

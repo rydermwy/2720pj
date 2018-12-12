@@ -1,13 +1,63 @@
 <div class="center">
-  <div class="">
-    <p>Hi, Admin</p>
-  </div>  
-  <div class="card-bg ">
-    <form>
-      <div class="form-group">
-        <label for="exampleFormControlFile1">Example file input</label>
-        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-      </div>
-    </form>
+  <ul class="nav">
+    <li class="nav-item">
+      <p class="nav-link" href="#">Hi, Admin</p>
+    </li>
+    <li class="nav-item ">
+      <p class="nav-link" routerLink="/">Logout</p>
+    </li>
+  </ul>
+  <div class="card-bg">
+    <div class="row">
+  <div class="col-2">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Update</a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Manage Events</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Manage Users</a>
+    </div>
   </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <div class="pb-3">
+          <button type="button" class="btn btn-sm btn-light">Load from online</button>
+        </div>
+        <form class="border-top border-light pt-3">
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload csv file</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        Manage Events<button type="button" class="float-right btn btn-success btn-lg">Create Event</button>
+        <div class="pt-3">
+        <ul>
+          <li><button type="button" class="btn btn-outline-warning">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </li>
+        </ul>
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        Manage Users<button type="button" class="float-right btn btn-success btn-lg">Create User</button>
+        <div class="pt-3">
+        <ul>
+          <li><button type="button" class="btn btn-outline-warning">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </li>
+        </ul>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
 </div>

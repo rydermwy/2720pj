@@ -1,6 +1,49 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
+<div class="jumbotron">
+    <h1>Course Categories!</h1>
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p>This is a list of course categories, click on each to see a list of courses for a given category.</p>
+</div>
+<div class="container m-5">
+<ul id="comments" class="list-unstyled">
+  <li class="media my-2">
+    <svg height="100" width="100">
+       <circle cx="50" cy="50" r="40" fill="green"></circle>
+    </svg>
+    <div class="media-body">
+      <h5>My first comment</h5>
+      <h6>chuckjee</h6>
+      <p>This lab is so fun! Let's explore more with Bootstrap and jQuery.</p>
+      <button class="breply btn btn-outline-dark btn-sm">reply</button>
+    </div>
+  </li>
+</ul>
+
+<div id="create" class="cm border-left border-light p-3 pt-3 w-50">
+  <form>
+  <div class="form-group w-50">
+    <label for="innmae">Name</label>
+    <input type="" class="form-control inname">
   </div>
+  <div class="form-group w-50">
+    <label for="insub">Subject</label>
+    <input type="" class="form-control insub">
+  </div>
+  <div class="form-group">
+    <label for="incm">Your Comment</label>
+    <textarea class="form-control incm" rows="3"></textarea>
+  </div>
+  <div class="clearfix m-0 p-0">
+  <div class="form-group w-25 float-left">
+    <label for="exampleFormControlSelect1">Color</label>
+    <select class="form-control inco">
+      <option class="bg-danger text-light">Red</option>
+      <option class="bg-success text-light">Green</option>
+      <option class="bg-warning text-light">Yellow</option>
+      <option class="bg-info text-light">Blue</option>
+    </select>
+  </div>
+  <br>
+  <button type="submit" class="add btn btn-warning text-white float-right mt-2">Add Comment</button>
+</div>
+</form>
 </div>

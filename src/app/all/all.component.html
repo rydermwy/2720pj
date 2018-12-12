@@ -1,8 +1,39 @@
 <p class="text-light">
   all works!
 </p>
-<ul>
-<li *ngFor="let post of posts | async" class="text-light">
-        {{post.id}} - {{post.title}}
-</li>
-</ul>
+<button type="button" class="btn btn-dark" routerLink="/user/single">Dark</button>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+<ul *ngIf="customersObservable | async as customers else empty">
+            <li *ngFor="let customer of customers">
+
+            </li>
+    </ul>
+<ng-template #empty> No Customers Yet </ng-template>
