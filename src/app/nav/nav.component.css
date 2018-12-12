@@ -1,3 +1,30 @@
+.nav{
+  border-bottom: 1px solid #fff5;
+  padding-top: 3vh;
+  width:80%;
+  margin: auto;
+  padding-left: 50%;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.1);
+}
+.nav a{
+  font-size: 1em;
+  color:white;
+}
+.nav-link.active{
+  border-bottom: 4px solid #4f6387!important;
+  color:#4f6387!important;
+  font-size: 1.3em!important;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(232, 246, 255, 0.1);
+  box-shadow: 0px 5px 10px -5px rgba(232, 246, 255, 0.1);
+}
+
+
+
+
+
+
 .navbar-primary {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 180px; /* Set the width of the sidebar */
