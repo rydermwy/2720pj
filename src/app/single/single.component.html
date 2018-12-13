@@ -1,28 +1,32 @@
-<div class="jumbotron">
-    <h1>Course Categories!</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    <p>This is a list of course categories, click on each to see a list of courses for a given category.</p>
+<div class="jumbotron alpha-8">
+    <button class="btn btn-outline-danger float-right" data-toggle="tooltip" data-placement="left" title="Add to favourite"><i class="fas fa-heart" color="pink"></i></button>
+    <h1>Title {{Event.name}}</h1>
+    <hr>
+    <p class="lead">Date: {{Event.date}}</p>
+    <p>Type: {{Event}}</p>
+    <p>Location: {{Event}}</p>
+    <hr>
+    <p class="lead">..</p>
 </div>
-<div class="container m-5">
+
+<div class="container pl-5">
 <ul id="comments" class="list-unstyled">
-  <li class="media my-2">
+  <li class="media my-2 alpha-8 bg-light rounded p-2">
     <svg height="100" width="100">
-       <circle cx="50" cy="50" r="40" fill="green"></circle>
+       <circle cx="50" cy="50" r="40" fill="darkblue"></circle>
     </svg>
     <div class="media-body">
       <h5>My first comment</h5>
       <h6>chuckjee</h6>
       <p>This lab is so fun! Let's explore more with Bootstrap and jQuery.</p>
-      <button class="breply btn btn-outline-dark btn-sm">reply</button>
     </div>
   </li>
 </ul>
 
-<div id="create" class="cm border-left border-light p-3 pt-3 w-50">
+<div id="create" class="cm border-left border-secondary text-light p-3 pt-3 w-50 mt-3">
   <form>
   <div class="form-group w-50">
-    <label for="innmae">Name</label>
-    <input type="" class="form-control inname">
+    <p>User</p>
   </div>
   <div class="form-group w-50">
     <label for="insub">Subject</label>
@@ -32,18 +36,7 @@
     <label for="incm">Your Comment</label>
     <textarea class="form-control incm" rows="3"></textarea>
   </div>
-  <div class="clearfix m-0 p-0">
-  <div class="form-group w-25 float-left">
-    <label for="exampleFormControlSelect1">Color</label>
-    <select class="form-control inco">
-      <option class="bg-danger text-light">Red</option>
-      <option class="bg-success text-light">Green</option>
-      <option class="bg-warning text-light">Yellow</option>
-      <option class="bg-info text-light">Blue</option>
-    </select>
-  </div>
-  <br>
-  <button type="submit" class="add btn btn-warning text-white float-right mt-2">Add Comment</button>
-</div>
+  <button type="submit" class="add btn db-color text-white float-right mt-2">Add Comment</button>
 </form>
+</div>
 </div>

@@ -10,8 +10,7 @@ var app = express();
 
 /*mongodb*/
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/pj', { promiseLibrary: require('bluebird') })
-  .then(() =>  console.log('connection successful'))
+mongoose.connect("mongodb+srv://newuser:newuser@c0-gnjbv.gcp.mongodb.net/test?retryWrites=true").then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 /**/
 
