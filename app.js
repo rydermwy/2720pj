@@ -1,17 +1,18 @@
-var createError = require('http-errors');
 var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-
-var apiRouter = require('./routes/book');
-
 var app = express();
-
-/*mongodb*/
+var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://newuser:newuser@c0-gnjbv.gcp.mongodb.net/test?retryWrites=true").then(() =>  console.log('connection successful'))
-  .catch((err) => console.error(err));
+var cors = require('cors');
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended:false}));
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+mongoose.connect("mongodb+srv://newuser:newuser@c0-gnjbv.gcp.mongodb.net/test?retryWrites=true");
+var db = mongoose.connection;
+db.connection.on('connection successful');
+}
+db.connection.on('DB Error!',(err) => {console.error(err)});
 /**/
 
 app.use(logger('dev'));
@@ -38,3 +39,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+var server = app.listen(3000);

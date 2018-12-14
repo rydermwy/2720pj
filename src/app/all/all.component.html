@@ -2,7 +2,7 @@
   all works!
 </p>
 <button type="button" class="btn btn-dark" routerLink="/user/single">Dark</button>
-<button type="button" class="btn btn-info" (click)="getEventfromService()">getEvt</button>
+<button type="button" class="btn btn-info" (click)="getAct()">getEvt</button>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -15,7 +15,7 @@
   <tbody>
     <tr  *ngFor="let item of event">
       <th scope="row"></th>
-      <td>{{item}}</td>
+      <td>{{item.EN_PGM_NAME}}</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
@@ -43,3 +43,4 @@
             </li>
 </ul>
 <ng-template #empty> No Customers Yet </ng-template>
+<div *ngIf="event">{{event}}</div>

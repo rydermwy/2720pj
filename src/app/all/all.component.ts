@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import {DataService} from "../data.service"
-
+import {DataService} from "../data.service";
+import {EventObj} from "../event"
 
 @Component({
   selector: 'app-all',
@@ -11,13 +11,18 @@ import {DataService} from "../data.service"
 })
 export class AllComponent implements OnInit {
 
-  event: string[]=[''];
-  getEventfromService(){
-    this.event = this.dataSer.getAct();
-  }
+  events: EventObj[];
+
   constructor(private dataSer: DataService) { }
 
   ngOnInit() {
+    this.getAct();
   }
+
+  getAct(): void{
+    this.dataSer.getAct()
+        .subscribe(events=>this.events = events);
+  }
+
 
 }
