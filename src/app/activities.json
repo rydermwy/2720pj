@@ -1,0 +1,74 @@
+{
+   "activities":[
+      {
+         "organization":"Lo Yau Fong Compuserv Charity Limited",
+         "date":"2018-12-26 09:00",
+         "district":"Kowloon",
+         "name":"General Charitable Fund-Raising Activity",
+         "contact":"2343-2255"
+      },
+      {
+         "organization":"Lo Yau Fong Compuserv Charity Limited",
+         "date":"2018-12-19 09:00",
+         "district":"New Territories and Islands",
+		 "name":"General Charitable Fund-Raising Activity",
+         "contact":"2343-2255"
+      },
+      {
+         "organization":"Hong Kong Red Cross",
+         "date":"2018-12-12 11:00",
+         "district":"New Territories and Islands",
+         "name":"General Charitable Fund-Raising Activity",
+         "contact":"2343-2255"
+      },
+      {
+         "organization":"SHA TIN COLLEGE PARENT TEACHER ASSOCIATION LIMITED",
+         "date":"2018-12-11 00:00:00",
+         "district":"Territory-Wide",
+		 "name":"Lottery",
+		 "contact":"2117-3798 / 2117-3916"
+      },
+      {
+         "organization":"Society for the Prevention of Cruelty to Animals (Hong Kong) Trustees Incorporated",
+		 "date":"2018-12-25 11:30",
+		 "district":"Kowloon",
+		 "name":"General Charitable Fund-Raising Activity",
+		 "contact":"2343-2255"
+      },
+      {
+         "organization":"Society for the Prevention of Cruelty to Animals (Hong Kong) Trustees Incorporated",
+		 "date":"2018-12-21 11:30",
+		 "district":"Kowloon",
+		 "name":"General Charitable Fund-Raising Activity",
+		 "contact":"2343-2255"
+      },
+      {
+         "organization":"Lo Yau Fong Compuserv Charity Limited",
+		 "date":"2018-12-22 13:00",
+		 "district":"New Territories and Islands",
+		 "name":"General Charitable Fund-Raising Activity",
+		 "contact":"2343-2255"
+      },
+      {
+         "organization":"Hong Kong Animal Adoption Centre Limited",
+		 "date":"2019-01-31 12:30",
+		 "district":"Kowloon",
+		 "name":"General Charitable Fund-Raising Activity",
+		 "contact":"2343-2255"
+      },
+      {
+         "organization":"Lo Yau Fong Compuserv Charity Limited",
+		 "date":"2018-12-29 13:00",
+		 "district":"Kowloon",
+		 "name":"General Charitable Fund-Raising Activity",
+		 "contact":"2343-2255"
+      },
+      {
+         "organization":"Lo Yau Fong Compuserv Charity Limited",
+		 "date":"2018-12-26 09:00",
+		 "district":"Kowloon",
+		 "name":"General Charitable Fund-Raising Activity",
+         "contact":"2343-2255"
+      }
+   ]
+}

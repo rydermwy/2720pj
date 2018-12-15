@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import {activities} from './activities.json';
 declare var jquery:any;
 declare let $:any;
 @Component({
@@ -9,7 +10,7 @@ declare let $:any;
 })
 export class AppComponent implements OnInit{
   title = 'Hello~';
-
+  
 
 public ngOnInit(){
   $(document).ready(function(){
